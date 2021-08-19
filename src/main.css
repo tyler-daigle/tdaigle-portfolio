@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-button {
+    @apply rounded-lg border py-2 px-4 font-bold border-blue-300 bg-blue-200  text-blue-800 text-center;
+  }
+
+  .project-list-item {
+    @apply border p-8 rounded-lg md:w-5/12 md:flex-grow box-border;
+  }
+
+  .button-container {
+    @apply my-8 flex flex-col justify-evenly flex-wrap gap-4 sm:flex-row;
+  }
+
+  .project-title {
+    @apply text-xl text-center;
+  }
+
+  .section-title {
+    @apply ml-16 text-2xl;
+  }
+  .project-image {
+    @apply w-auto h-32 block mx-auto my-8;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-gray-800;
+  }
+
+  h2 {
+    @apply ml-16 text-2xl;
+  }
+
+  p {
+    @apply font-light;
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+    <title>My Portfolio</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- main header and logo -->
+    <header id="top" class="main-header border-b-2 mb-8">
+      <div class="container p-8 mx-auto lg:max-w-5xl">
+        <h1 class="text-3xl">tdaigle.com</h1>
+        <p class="text-sm font-light text-gray-600">
+          This is a little blurb about what I am doing.
+        </p>
+      </div>
+    </header>
+
+    <!-- main container for the page centers and limits size on large screens -->
+    <main class="container mx-auto px-8 lg:max-w-5xl">
+      <!-- About Me -->
+      <section class="mb-8">
+        <header class="flex items-end mb-8">
+          <img
+            class="h-24"
+            src="images/webdev.svg"
+            alt="web development icon"
+          />
+          <h2 class="section-title">About Me</h2>
+        </header>
+
+        <p class="font-light mb-8">
+          Hello, my name is Tyler. I am an
+          <strong>aspiring</strong> web developer. What I like most about web
+          development is trying to solve <strong>unique</strong> problems. I
+          enjoy discovering different and creative ways to find solutions to
+          challenges.
+        </p>
+      </section>
+
+      <!-- projects list -->
+      <section>
+        <header class="flex items-end mb-8">
+          <img class="h-24" src="images/projects.svg" alt="projects icon" />
+          <h2 class="ml-16 text-2xl">Some of my projects</h2>
+        </header>
+        <p class="font-light mb-8">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod omnis
+          veniam alias ex a quam cupiditate! Blanditiis qui ut magni, molestias,
+          quasi placeat odio vero dolorum libero, soluta at? Asperiores.
+        </p>
+
+        <p class="font-light">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae
+          repudiandae fuga earum quia eius. Sint, perferendis delectus. Aperiam
+          tenetur ullam iure et rem quidem libero voluptatibus blanditiis optio
+          aspernatur dolorem at atque, doloremque placeat vitae accusamus. Odio
+          hic est earum provident?
+        </p>
+
+        <!-- project list -->
+        <ul
+          class="my-8 border-gray-600 flex flex-col md:flex-row gap-8 flex-wrap"
+        >
+          <li class="project-list-item">
+            <h3 class="project-title">Budget Predictor</h3>
+            <img
+              src="images/budget.svg"
+              class="project-image"
+              alt="icon for a budget"
+            />
+            <p class="font-light">
+              <strong>Budget Predictor</strong> is an app created with
+              <strong>Vue</strong> which allows you to enter transactions
+              (mortgage payments, salary, rental income, etc.) and calculates
+              how much money you will have at the end of each month. I don't
+              have much experience with Vue so I decided to create this project
+              to learn more about Vue.
+            </p>
+
+            <h4 class="mt-8 font-bold">Some features of Budget Predictor:</h4>
+            <ul class="list-disc font-light">
+              <li class="ml-8">
+                Ability to edit, delete, or add transactions.
+              </li>
+              <li class="ml-8">App is responsive on different screen sizes.</li>
+              <li class="ml-8">
+                Custom dialog box for adding/deleting/editing transactions.
+              </li>
+            </ul>
+
+            <div class="button-container">
+              <a
+                href="#"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Demo</a
+              >
+              <a
+                href="#"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
+            </div>
+          </li>
+
+          <li class="project-list-item">
+            <h3 class="project-title">Budget Predictor</h3>
+            <img src="images/budget.svg" class="project-image" />
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+              maxime, ratione debitis omnis nostrum cum maiores aliquam
+              excepturi dolores.
+            </p>
+
+            <div class="button-container">
+              <button type="button" class="primary-button">View Demo</button>
+              <button type="button" class="primary-button">View Code</button>
+            </div>
+          </li>
+
+          <li class="project-list-item">
+            <h3 class="project-title">Budget Predictor</h3>
+            <img src="images/budget.svg" class="project-image" />
+
+            <p class="font-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+              maxime, ratione debitis omnis nostrum cum maiores aliquam
+              excepturi dolores.
+            </p>
+
+            <div class="button-container">
+              <button type="button" class="primary-button">View Demo</button>
+              <button type="button" class="primary-button">View Code</button>
+            </div>
+          </li>
+
+          <li class="project-list-item">
+            <h3 class="project-title">Budget Predictor</h3>
+            <img src="images/budget.svg" class="project-image" />
+
+            <p class="font-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+              maxime, ratione debitis omnis nostrum cum maiores aliquam
+              excepturi dolores.
+            </p>
+
+            <div class="button-container">
+              <button type="button" class="primary-button">View Demo</button>
+              <button type="button" class="primary-button">View Code</button>
+            </div>
+          </li>
+        </ul>
+        <!-- end of projects container -->
+      </section>
+
+      <!-- contact me section -->
+      <section>
+        <header>
+          <h2 class="section-title ml-0">Contact Me</h2>
+        </header>
+
+        <p class="my-8">
+          You can view my
+          <a
+            class="text-blue-600"
+            href="https://github.com/tyler-daigle"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github Profile</a
+          >
+          or contact me using the form below.
+        </p>
+
+        <!-- form container -->
+        <div
+          class="
+            max-w-md
+            mx-auto
+            sm:mx-0
+            border border-gray-200
+            p-4
+            rounded-md
+            shadow-md
+          "
+        >
+          <form data-netlify="true">
+            <div class="mb-8">
+              <label class="block text-gray-700 font-bold mb-2" for="email"
+                >Your Email:</label
+              >
+              <input
+                class="border rounded py-2 px-4 w-full"
+                type="email"
+                name="email"
+                id="email-address"
+                required
+              />
+            </div>
+
+            <div class="mb-8">
+              <label class="block text-gray-700 font-bold mb-2" for="message"
+                >Your message, questions, complaints or comments:</label
+              >
+              <textarea
+                class="border w-full h-56"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-8">
+              <button
+                type="submit"
+                id="submit-button"
+                class="primary-button w-full"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+          <h3 class="text-center text-xl text-green-800" id="status"></h3>
+        </div>
+        <!-- end of form container -->
+      </section>
+    </main>
+
+    <footer class="main-footer w-full border-t-2 mt-8 h-72 p-8">
+      <img
+        class="block mx-auto rounded-full h-28 w-28"
+        src="images/cat_small.png"
+        alt="Sarge the angry cat"
+      />
+      <span class="block font-bold text-gray-700 text-center mt-8"
+        >Goodbye and thanks for viewing my profile.</span
+      >
+      <a class="block text-center mt-8 text-blue-600" href="#top"
+        >Back to the top.</a
+      >
+    </footer>
+  </body>
+</html>
