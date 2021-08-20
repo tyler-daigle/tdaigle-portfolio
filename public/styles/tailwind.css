@@ -599,6 +599,9 @@ video {
 
 .project-list-item {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 0.5rem;
   border-width: 1px;
   padding: 2rem;
@@ -612,8 +615,7 @@ video {
 }
 
 .button-container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -670,17 +672,34 @@ p {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-8 {
@@ -691,12 +710,12 @@ p {
   margin-left: 0px;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .ml-16 {
   margin-left: 4rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .block {
@@ -889,12 +908,21 @@ p {
   background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -910,6 +938,10 @@ p {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-center {

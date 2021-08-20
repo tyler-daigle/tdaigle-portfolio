@@ -8,11 +8,11 @@
   }
 
   .project-list-item {
-    @apply border p-8 rounded-lg md:w-5/12 md:flex-grow box-border;
+    @apply border p-8 rounded-lg md:w-5/12 md:flex-grow box-border  flex flex-col justify-evenly;
   }
 
   .button-container {
-    @apply my-8 flex flex-col justify-evenly flex-wrap gap-4 sm:flex-row;
+    @apply mt-auto flex flex-col justify-evenly flex-wrap gap-4 sm:flex-row;
   }
 
   .project-title {

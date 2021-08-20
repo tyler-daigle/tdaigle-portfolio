@@ -66,6 +66,35 @@
         <ul
           class="my-8 border-gray-600 flex flex-col md:flex-row gap-8 flex-wrap"
         >
+          <!-- 
+         Skeleton For Project Items  
+          <li class="project-list-item">
+            <h3 class="project-title">Title</h3>
+            <img src="images/budget.svg" class="project-image" />
+
+            <p>
+              Description....
+            </p>
+
+            <div class="button-container">
+                <a
+                  href="#"
+                  class="primary-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+                <a
+                  href="#"
+                  class="primary-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Code</a
+                >
+              </div>
+          </li> -->
+
+          <!-- Budget Predictor -->
           <li class="project-list-item">
             <h3 class="project-title">Budget Predictor</h3>
             <img
@@ -77,32 +106,30 @@
               <strong>Budget Predictor</strong> is an app created with
               <strong>Vue</strong> which allows you to enter transactions
               (mortgage payments, salary, rental income, etc.) and calculates
-              how much money you will have at the end of each month. I don't
-              have much experience with Vue so I decided to create this project
-              to learn more about Vue.
+              how much money you will have at the end of each month.
             </p>
 
-            <h4 class="mt-8 font-bold">Some features of Budget Predictor:</h4>
-            <ul class="list-disc font-light">
-              <li class="ml-8">
+            <h4 class="my-4 font-bold">Some features of Budget Predictor:</h4>
+            <ul class="pl-8 list-disc mb-4">
+              <li class="mb-2">
                 Ability to edit, delete, or add transactions.
               </li>
-              <li class="ml-8">App is responsive on different screen sizes.</li>
-              <li class="ml-8">
+              <li class="mb-2">App is responsive on different screen sizes.</li>
+              <li class="mb-2">
                 Custom dialog box for adding/deleting/editing transactions.
               </li>
             </ul>
 
             <div class="button-container">
               <a
-                href="#"
+                href="https://boring-aryabhata-5f2727.netlify.app/"
                 class="primary-button"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View Demo</a
               >
               <a
-                href="#"
+                href="https://github.com/tyler-daigle/budget-predictor"
                 class="primary-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,54 +138,220 @@
             </div>
           </li>
 
+          <!-- Halloween Countdown -->
           <li class="project-list-item">
-            <h3 class="project-title">Budget Predictor</h3>
-            <img src="images/budget.svg" class="project-image" />
+            <h3 class="project-title">Halloween Countdown Badge</h3>
+            <img
+              src="https://halloween-countdown.herokuapp.com/"
+              class="project-image h-24"
+              height="100px"
+              alt="Halloween Countdown Image"
+            />
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-              maxime, ratione debitis omnis nostrum cum maiores aliquam
-              excepturi dolores.
+              I wanted to create something similar to the dynamic badges that
+              you see people embed in Readme files on Github. You can't have
+              Javascript running inside of a Markdown file, but you can link to
+              images. I created a very simple <strong>SVG image</strong> that
+              has the number of days until Halloween dynamically added to it
+              when a request is made to the server.
+            </p>
+
+            <p class="my-4">
+              This project is actually just a very simple express server
+              deployed to Heroku. You can embed the badge just by treating it as
+              an img tag in html or markdown.
             </p>
 
             <div class="button-container">
-              <button type="button" class="primary-button">View Demo</button>
-              <button type="button" class="primary-button">View Code</button>
+              <a
+                href="https://halloween-countdown.herokuapp.com/"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Demo</a
+              >
+              <a
+                href="https://github.com/tyler-daigle/halloween-countdown"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
             </div>
           </li>
 
+          <!-- React Blackjack -->
           <li class="project-list-item">
-            <h3 class="project-title">Budget Predictor</h3>
-            <img src="images/budget.svg" class="project-image" />
+            <h3 class="project-title">React Blackjack</h3>
+            <img src="images/react.svg" class="project-image" />
 
-            <p class="font-light">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-              maxime, ratione debitis omnis nostrum cum maiores aliquam
-              excepturi dolores.
+            <p class="text-center my-4">
+              This is just Black Jack created with React.
             </p>
 
-            <div class="button-container">
-              <button type="button" class="primary-button">View Demo</button>
-              <button type="button" class="primary-button">View Code</button>
+            <div class="button-container mt-auto">
+              <a
+                href="https://github.com/tylerd81/react-blackjack"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
             </div>
           </li>
 
+          <!-- Resistor Calculator -->
           <li class="project-list-item">
-            <h3 class="project-title">Budget Predictor</h3>
-            <img src="images/budget.svg" class="project-image" />
+            <h3 class="project-title">Resistor Calculator</h3>
+            <img
+              src="images/resistor_calc.svg"
+              class="project-image"
+              height="128px"
+            />
 
-            <p class="font-light">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-              maxime, ratione debitis omnis nostrum cum maiores aliquam
-              excepturi dolores.
+            <p>
+              This is a resistor calculator or decoder. The resistance in a
+              resistor can be calculated by looking at the colored bands. This
+              little app allows you to enter the colors of the bands and tells
+              you the resistance in Ohms.
+            </p>
+
+            <p class="my-4">
+              It was created with just Vanilla Javascript, html and css. The
+              Javascript files can be packaged using either Webpack or parcel.
             </p>
 
             <div class="button-container">
-              <button type="button" class="primary-button">View Demo</button>
-              <button type="button" class="primary-button">View Code</button>
+              <a
+                href="https://github.com/tylerd81/resistor-calculator"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
+            </div>
+          </li>
+
+          <!-- Fallout Password Game -->
+          <li class="project-list-item">
+            <h3 class="project-title">Fallout Password Hacking Game</h3>
+            <img
+              src="images/fallout.png"
+              class="project-image"
+              height="128px"
+            />
+
+            <p class="mb-4">
+              This is my attempt at a Fallout hacking minigame. If you have ever
+              played any of the fallout games then you have most likely seen the
+              hacking minigame where you have to guess a password. This is still
+              a work in progress.
+            </p>
+
+            <p class="mb-4">
+              This project is created with Vanilla Javascript on the frontend.
+              There is an express server that runs the word server. The word
+              server just returns a list of words of a certain length to be used
+              in the game.
+            </p>
+
+            <p class="mt-2 mb-4">
+              As I said above this is still a work in progress. I plan on
+              removing the word server and just having a list of words on the
+              client side.
+            </p>
+
+            <div class="button-container">
+              <a
+                href="https://github.com/tyler-daigle/fallout-game"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
+            </div>
+          </li>
+
+          <!-- Chingu First Projects  -->
+          <li class="project-list-item">
+            <h3 class="project-title">Chingu Matching Game</h3>
+            <img
+              src="images/chingu1.svg"
+              class="project-image"
+              alt="Notebook and Pen"
+            />
+
+            <p class="mb-4">
+              I participated in the Chingu program (from
+              <a
+                class="text-blue-600"
+                href="https://chingu.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Chingu.io</a
+              >) twice. I had a mixed experience but I did get to work on some
+              different projects.
+            </p>
+
+            <p class="mb-4">
+              To get into the first Chingu Voyage I had to create a matching
+              game. You play the game by selecting a card and then trying to
+              select the other card that is the same. This project was created
+              with React
+            </p>
+
+            <p class="mb-4">
+              To get into the second Chingu Voyage I did, I had to create a
+              clone of the Google Fonts selector. I did this using React.
+            </p>
+            <div class="button-container">
+              <a
+                href="https://github.com/tylerd81/chingu-matching-game"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Matching Game Code</a
+              >
+              <a
+                href="https://github.com/tylerd81/chingu-favorite-fonts"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Font Selector Code</a
+              >
+            </div>
+          </li>
+
+          <!-- Chingu Meal Counter -->
+          <li class="project-list-item">
+            <h3 class="project-title">Chingu Calorie Counter</h3>
+            <img
+              src="images/cup.svg"
+              class="project-image"
+              alt="Fast food cup"
+            />
+
+            <p class="mb-4">
+              The second Chingu voyage I participated in I worked on a team
+              where we created an application that was supposed to count how
+              many calories a meal contained. It was a fun experience but the
+              group kind of fell apart, mostly due to it being around the
+              Thanksgiving holiday.
+            </p>
+
+            <div class="button-container">
+              <a
+                href="https://github.com/tylerd81/v13-geckos-team-01"
+                class="primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
             </div>
           </li>
         </ul>
+
         <!-- end of projects container -->
       </section>
 
@@ -194,11 +387,13 @@
         >
           <form data-netlify="true">
             <div class="mb-8">
-              <label class="block text-gray-700 font-bold mb-2" for="email"
+              <label
+                class="block text-gray-700 font-bold mb-2"
+                for="email-address"
                 >Your Email:</label
               >
               <input
-                class="border rounded py-2 px-4 w-full"
+                class="border rounded py-2 px-2 w-full"
                 type="email"
                 name="email"
                 id="email-address"
@@ -211,9 +406,10 @@
                 >Your message, questions, complaints or comments:</label
               >
               <textarea
-                class="border w-full h-56"
+                class="border w-full h-56 p-2"
                 id="message"
                 name="message"
+                placeholder="Enter your message..."
                 required
               ></textarea>
             </div>
