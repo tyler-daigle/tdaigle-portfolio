@@ -16,11 +16,11 @@
   }
 
   .project-title {
-    @apply text-xl text-center;
+    @apply text-xl text-center text-blue-800;
   }
 
   .section-title {
-    @apply ml-16 text-2xl;
+    @apply text-2xl;
   }
   .project-image {
     @apply w-auto h-32 block mx-auto my-8;
@@ -33,7 +33,7 @@
   }
 
   h2 {
-    @apply ml-16 text-2xl;
+    @apply text-2xl;
   }
 
   p {

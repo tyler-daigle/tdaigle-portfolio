@@ -12,11 +12,29 @@
   <body>
     <!-- main header and logo -->
     <header id="top" class="main-header border-b-2 mb-8">
-      <div class="container p-8 mx-auto lg:max-w-5xl">
+      <div
+        class="
+          container
+          p-8
+          mx-auto
+          lg:max-w-5xl
+          flex
+          items-baseline
+          justify-between
+        "
+      >
         <h1 class="text-3xl">tdaigle.com</h1>
-        <p class="text-sm font-light text-gray-600">
-          This is a little blurb about what I am doing.
-        </p>
+        <div>
+          <a
+            class="text-blue-600 font-bold"
+            href="https://github.com/tyler-daigle"
+            >[Github]</a
+          >
+          <a class="text-blue-600 font-bold" href="https://codepen.io/tdaigle"
+            >[Codepen.io]</a
+          >
+          <a class="text-blue-600 font-bold" href="#">[Resume]</a>
+        </div>
       </div>
     </header>
 
@@ -24,13 +42,8 @@
     <main class="container mx-auto px-8 lg:max-w-5xl">
       <!-- About Me -->
       <section class="mb-8">
-        <header class="flex items-end mb-8">
-          <img
-            class="h-24"
-            src="images/webdev.svg"
-            alt="web development icon"
-          />
-          <h2 class="section-title">About Me</h2>
+        <header class="mb-8">
+          <h2>About Me</h2>
         </header>
 
         <p class="font-light mb-8">
@@ -44,9 +57,8 @@
 
       <!-- projects list -->
       <section>
-        <header class="flex items-end mb-8">
-          <img class="h-24" src="images/projects.svg" alt="projects icon" />
-          <h2 class="ml-16 text-2xl">Some of my projects</h2>
+        <header class="mb-8">
+          <h2 class="text-2xl">Some of my projects</h2>
         </header>
         <p class="font-light mb-8">
           I have created quite a few different projects. I like to try using
@@ -89,39 +101,42 @@
 
           <!-- Movie Selector -->
           <li class="project-list-item">
-            <h3 class="project-title">Horror Movie Selector</h3>
-            <img src="images/skull_red_small.png" class="project-image" />
+            <h3 class="project-title">amateur-radio.school</h3>
+            <img src="images/monitor_test.svg" class="project-image" />
 
             <p class="mb-4">
-              This is just a demo for an idea I had. It is a site that allows
-              you to set some values for the type of movie you want to see and
-              then displays a list of movies that you might be interested in.
+              I created a website to help people practice for the
+              <strong>amateur radio exams</strong>. The website allows you to
+              practice for all three classes of exams: Technician, General and
+              Amateur Extra.
+            </p>
+
+            <h4 class="mb-4 font-bold">Converting The Data</h4>
+            <p class="mb-4">
+              The FCC provides a pool of questions that are to be used on the
+              exams. I wrote some python scripts to convert the question pool
+              data, which is provided in text and PDF formats, into JSON. I then
+              used the headless CMS <strong>Contentful</strong> to host the
+              question data. The client side of the website is hosted on
+              <strong>Netlify</strong>.
             </p>
 
             <p class="mb-4">
-              The main reason I wanted to make this demo was just to play around
-              with some <strong>custom controls</strong>. There is a "level
-              selector" control that lets you select from 1 to 5 skulls (or
-              levels). There is also a custom range input that is styled using
-              an image and a linear gradient that changes as you change the
-              range.
-            </p>
-
-            <p class="mb-4">
-              The project was created with <strong>Next JS</strong> and is still
-              a work in progress. It is hosted on Vercel.
+              The project was created with <strong>React</strong> and is still a
+              work in progress but is currently functional. It allows a user to
+              take an exam and then see their results at the end.
             </p>
 
             <div class="button-container">
               <a
-                href="https://movie-selector.vercel.app"
+                href="https://amateur-radio.school"
                 class="primary-button"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View Demo</a
+                >View App</a
               >
               <a
-                href="https://github.com/tyler-daigle/movie-selector"
+                href="https://github.com/tyler-daigle/practice-ham"
                 class="primary-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -166,54 +181,6 @@
               >
               <a
                 href="https://github.com/tyler-daigle/budget-predictor"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Halloween Countdown -->
-          <li class="project-list-item">
-            <h3 class="project-title">Halloween Countdown Badge</h3>
-            <!-- <img
-              src="https://halloween-countdown.herokuapp.com/"
-              class="project-image h-24"
-              height="100px"
-              alt="Halloween Countdown Image"
-            /> -->
-            <div class="project-image h-24" id="halloween-container">
-              <span class="text-green-900 project-image text-lg text-center"
-                >Waiting for Heroku to wake up...</span
-              >
-            </div>
-
-            <p>
-              I wanted to create something similar to the dynamic badges that
-              you see people embed in Readme files on Github. You can't have
-              Javascript running inside of a Markdown file, but you can link to
-              images. I created a very simple <strong>SVG image</strong> that
-              has the number of days until Halloween dynamically added to it
-              when a request is made to the server.
-            </p>
-
-            <p class="my-4">
-              This project is actually just a very simple express server
-              deployed to Heroku. You can embed the badge just by treating it as
-              an img tag in html or markdown.
-            </p>
-
-            <div class="button-container">
-              <a
-                href="https://halloween-countdown.herokuapp.com/"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Demo</a
-              >
-              <a
-                href="https://github.com/tyler-daigle/halloween-countdown"
                 class="primary-button"
                 target="_blank"
                 rel="noopener noreferrer"
