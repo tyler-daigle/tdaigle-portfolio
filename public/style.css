@@ -36,7 +36,7 @@ body {
 
 .intro-container {
   background-color: var(--header-bg-color);
-  padding: var(--spacing-size);
+  padding: 2rem;
 }
 
 section {
@@ -44,7 +44,7 @@ section {
 }
 
 main {
-  padding: var(--spacing-size);
+  padding: 2rem;
   margin-top: 80px;
 }
 
@@ -197,6 +197,7 @@ textarea {
   font-size: 1.5rem;
   padding: 0.25rem;
 }
+
 @media (min-width: 800px) {
   .intro-container section {
     width: 800px;
