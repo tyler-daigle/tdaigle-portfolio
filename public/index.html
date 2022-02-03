@@ -4,462 +4,159 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/tailwind.css" />
-    <link rel="stylesheet" href="styles/custom.css" />
-    <title>My Portfolio</title>
-    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>tdaigle.com - web development portfolio</title>
   </head>
   <body>
-    <!-- main header and logo -->
-    <header id="top" class="main-header border-b-2 mb-8">
-      <div
-        class="
-          container
-          p-8
-          mx-auto
-          lg:max-w-5xl lg:flex
-          items-baseline
-          justify-between
-        "
-      >
-        <h1 class="text-3xl">tdaigle.com</h1>
-        <div>
-          <a
-            class="text-blue-600 font-bold"
-            href="https://github.com/tyler-daigle"
-            >[Github]</a
-          >
-          <a class="text-blue-600 font-bold" href="https://codepen.io/tdaigle"
-            >[Codepen.io]</a
-          >
-          <a class="text-blue-600 font-bold" href="#">[Resume]</a>
-        </div>
-      </div>
-    </header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
-    <!-- main container for the page centers and limits size on large screens -->
-    <main class="container mx-auto px-8 lg:max-w-5xl">
-      <!-- About Me -->
-      <section class="mb-8">
-        <header class="mb-8">
-          <h2>About Me</h2>
-        </header>
-
-        <p class="font-light mb-8">
-          Hello, my name is Tyler. I am an
-          <strong>aspiring</strong> web developer. What I like most about web
-          development is trying to solve <strong>unique</strong> problems. I
-          enjoy discovering different and creative ways to find solutions to
-          challenges.
-        </p>
-      </section>
-
-      <!-- projects list -->
-      <section>
-        <header class="mb-8">
-          <h2 class="text-2xl">Some of my projects</h2>
-        </header>
-        <p class="font-light mb-8">
-          I have created quite a few different projects. I like to try using
-          different technologies. Some projects are created with just vanilla
-          JavaScript and others are created using Vue or React. Some of them are
-          still works in progress.
-        </p>
-
-        <!-- project list -->
-        <ul
-          class="my-8 border-gray-600 flex flex-col md:flex-row gap-8 flex-wrap"
-        >
-          <!-- 
-         Skeleton For Project Items  
-          <li class="project-list-item">
-            <h3 class="project-title">Title</h3>
-            <img src="images/budget.svg" class="project-image" />
-
-            <p>
-              Description....
-            </p>
-
-            <div class="button-container">
-                <a
-                  href="#"
-                  class="primary-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View Demo</a
-                >
-                <a
-                  href="#"
-                  class="primary-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View Code</a
-                >
-              </div>
-          </li> -->
-
-          <!-- Movie Selector -->
-          <li class="project-list-item">
-            <h3 class="project-title">amateur-radio.school</h3>
-            <img src="images/monitor_test.svg" class="project-image" />
-
-            <p class="mb-4">
-              I created a website to help people practice for the
-              <strong>amateur radio exams</strong>. The website allows you to
-              practice for all three classes of exams: Technician, General and
-              Amateur Extra.
-            </p>
-
-            <h4 class="mb-4 font-bold">Converting The Data</h4>
-            <p class="mb-4">
-              The FCC provides a pool of questions that are to be used on the
-              exams. I wrote some python scripts to convert the question pool
-              data, which is provided in text and PDF formats, into JSON. I then
-              used the headless CMS <strong>Contentful</strong> to host the
-              question data. The client side of the website is hosted on
-              <strong>Netlify</strong>.
-            </p>
-
-            <p class="mb-4">
-              The project was created with <strong>React</strong> and is still a
-              work in progress but is currently functional. It allows a user to
-              take an exam and then see their results at the end.
-            </p>
-
-            <div class="button-container">
-              <a
-                href="https://amateur-radio.school"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View App</a
-              >
-              <a
-                href="https://github.com/tyler-daigle/practice-ham"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Budget Predictor -->
-          <li class="project-list-item">
-            <h3 class="project-title">Budget Predictor</h3>
-            <img
-              src="images/budget.svg"
-              class="project-image"
-              alt="icon for a budget"
-            />
-            <p class="font-light">
-              <strong>Budget Predictor</strong> is an app created with
-              <strong>Vue</strong> which allows you to enter transactions
-              (mortgage payments, salary, rental income, etc.) and calculates
-              how much money you will have at the end of each month.
-            </p>
-
-            <h4 class="my-4 font-bold">Some features of Budget Predictor:</h4>
-            <ul class="pl-8 list-disc mb-4">
-              <li class="mb-2">
-                Ability to edit, delete, or add transactions.
-              </li>
-              <li class="mb-2">App is responsive on different screen sizes.</li>
-              <li class="mb-2">
-                Custom dialog box for adding/deleting/editing transactions.
-              </li>
-            </ul>
-
-            <div class="button-container">
-              <a
-                href="https://boring-aryabhata-5f2727.netlify.app/"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Demo</a
-              >
-              <a
-                href="https://github.com/tyler-daigle/budget-predictor"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- React Blackjack -->
-          <li class="project-list-item">
-            <h3 class="project-title">React Blackjack</h3>
-            <img
-              src="images/react.svg"
-              class="project-image"
-              alt="React Logo"
-            />
-
-            <p class="text-center my-4">
-              This is just Blackjack created with React.
-            </p>
-
-            <div class="button-container mt-auto">
-              <a
-                href="https://github.com/tylerd81/react-blackjack"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Resistor Calculator -->
-          <li class="project-list-item">
-            <h3 class="project-title">Resistor Calculator</h3>
-            <img
-              src="images/resistor_calc.svg"
-              class="project-image"
-              height="128px"
-              alt="Drawing of a wrench on a laptop"
-            />
-
-            <p>
-              This is a resistor calculator or decoder. The resistance in a
-              resistor can be calculated by looking at the colored bands. This
-              little app allows you to enter the colors of the bands and tells
-              you the resistance in Ohms.
-            </p>
-
-            <p class="my-4">
-              It was created with just Vanilla Javascript, html and css. The
-              Javascript files can be packaged using either Webpack or parcel.
-            </p>
-
-            <div class="button-container">
-              <a
-                href="https://github.com/tylerd81/resistor-calculator"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Fallout Password Game -->
-          <li class="project-list-item">
-            <h3 class="project-title">Fallout Password Hacking Game</h3>
-            <img
-              src="images/fallout.png"
-              class="project-image"
-              height="128px"
-              alt="Fallout Guy"
-            />
-
-            <p class="mb-4">
-              This is my attempt at a Fallout hacking minigame. If you have ever
-              played any of the fallout games then you have most likely seen the
-              hacking minigame where you have to guess a password. This is still
-              a work in progress.
-            </p>
-
-            <p class="mb-4">
-              This project is created with Vanilla Javascript on the frontend.
-              There is an express server that runs the word server. The word
-              server just returns a list of words of a certain length to be used
-              in the game.
-            </p>
-
-            <p class="mt-2 mb-4">
-              As I said above this is still a work in progress. I plan on
-              removing the word server and just having a list of words on the
-              client side.
-            </p>
-
-            <div class="button-container">
-              <a
-                href="https://github.com/tyler-daigle/fallout-game"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Chingu First Projects  -->
-          <li class="project-list-item">
-            <h3 class="project-title">Chingu Matching Game</h3>
-            <img
-              src="images/chingu1.svg"
-              class="project-image"
-              alt="Notebook and Pen"
-            />
-
-            <p class="mb-4">
-              I participated in the Chingu program (from
-              <a
-                class="text-blue-600"
-                href="https://chingu.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Chingu.io</a
-              >) twice. I had a mixed experience but I did get to work on some
-              different projects.
-            </p>
-
-            <p class="mb-4">
-              To get into the first Chingu Voyage I had to create a matching
-              game. You play the game by selecting a card and then trying to
-              select the other card that is the same. This project was created
-              with React.
-            </p>
-
-            <p class="mb-4">
-              To get into the second Chingu Voyage I did, I had to create a
-              clone of the Google Fonts selector. I did this using React.
-            </p>
-            <div class="button-container">
-              <a
-                href="https://github.com/tylerd81/chingu-matching-game"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Matching Game Code</a
-              >
-              <a
-                href="https://github.com/tylerd81/chingu-favorite-fonts"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Font Selector Code</a
-              >
-            </div>
-          </li>
-
-          <!-- Chingu Meal Counter -->
-          <li class="project-list-item">
-            <h3 class="project-title">Chingu Calorie Counter</h3>
-            <img
-              src="images/cup.svg"
-              class="project-image"
-              alt="Fast food cup"
-            />
-
-            <p class="mb-4">
-              The second Chingu voyage I participated in I worked on a team
-              where we created an application that was supposed to count how
-              many calories a meal contained. It was a fun experience but the
-              group kind of fell apart, mostly due to it being around the
-              Thanksgiving holiday.
-            </p>
-
-            <div class="button-container">
-              <a
-                href="https://github.com/tylerd81/v13-geckos-team-01"
-                class="primary-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code</a
-              >
-            </div>
-          </li>
-        </ul>
-
-        <!-- end of projects container -->
-      </section>
-
-      <!-- contact me section -->
-      <section>
+    <div class="intro-container">
+      <section class="intro-section">
         <header>
-          <h2 class="section-title ml-0">Contact Me</h2>
+          <h1>ABOUT ME</h1>
         </header>
 
-        <p class="my-4">
+        <p class="intro-text">
+          Hello, my name is Tyler. I am web developer who likes trying to solve
+          unique problems. I enjoy discovering different and creative ways to
+          find solutions to challenges.
+        </p>
+
+        <a href="#contact" class="btn btn-large">CONTACT ME</a>
+        <img
+          class="intro-image"
+          src="./images/header-image-small.jpg"
+          width="400"
+          height="267"
+          alt="Image of a gloomy forest"
+        />
+      </section>
+    </div>
+
+    <main>
+      <section id="projects">
+        <h2>PROJECTS</h2>
+
+        <h3>tshirt-creator</h3>
+        <img
+          class="project-screenshot"
+          src="images/tshirt-creator-screenshot-small.png"
+          alt="Tshirt Creator Screenshot"
+          width="300"
+          height="660"
+        />
+        <p>
+          T-shirt creator is a web app for creating images of t-shirts for
+          sellers of shirts. The app allows you to upload your own artwork,
+          position and scale the artwork on the shirt and change shirt colors.
+          You can then download the images for use on your own site.
+        </p>
+        <p>
+          The main goal of the app is to make it quicker and easier for people
+          to create images of t-shirts rather than having to manually create
+          them. The app is still a work in progress but is created with
+          <strong>React</strong> and will soon have
+          <strong>Firebase</strong> integration for storing images and managing
+          users.
+        </p>
+
+        <div class="button-container">
+          <button class="btn disabled-link" type="button" disabled>DEMO</button>
+          <button class="btn disabled-link" type="button" disabled>
+            VIEW CODE
+          </button>
+        </div>
+
+        <h3>amateur-radio.school</h3>
+        <img
+          class="project-screenshot"
+          src="images/ham-exam-screenshot-small.png"
+          alt="Tshirt Creator Screenshot"
+          width="300"
+          height="660"
+        />
+
+        <p>
+          I created a website to help people practice for the amateur radio
+          exams. The website allows you to practice for all three classes of
+          exams: Technician, General and Amateur Extra.
+        </p>
+        <p>
+          The project was created with <strong>React</strong>. The question data
+          is hosted on <strong>Contentful</strong> and the client side is hosted
+          on <strong>Netlify</strong>. It allows a user to take an exam and then
+          see their results at the end.
+        </p>
+        <div class="button-container">
+          <a
+            href="https://amateur-radio.school"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            >DEMO</a
+          >
+          <a
+            href="https://github.com/tyler-daigle/practice-ham"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            >VIEW CODE</a
+          >
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>SKILLS</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Linux</li>
+          <li>CSS</li>
+          <li>Figma</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>CONTACT ME</h2>
+
+        <p>
           You can view my
           <a
-            class="text-blue-600"
+            class="contact-link"
             href="https://github.com/tyler-daigle"
             target="_blank"
             rel="noopener noreferrer"
-            >Github Profile</a
-          >
-          or contact me using the form below.
-        </p>
-        <p class="mb-4">
-          You can also email me at
-          <a class="text-blue-600" href="mailto:tyler@tdaigle.com"
-            >tyler@tdaigle.com</a
-          >
+            >Github Profile
+          </a>
+          or contact me using the form below. You can also email me at
+          <a class="contact-link" href="mailto:tyler@tdaigle.com">
+            tyler@tdaigle.com
+          </a>
         </p>
 
-        <!-- form container -->
-        <div
-          class="
-            max-w-md
-            mx-auto
-            sm:mx-0
-            border border-gray-200
-            p-4
-            rounded-md
-            shadow-md
-          "
-        >
-          <form data-netlify="true">
-            <div class="mb-8">
-              <label
-                class="block text-gray-700 font-bold mb-2"
-                for="email-address"
-                >Your Email:</label
-              >
-              <input
-                class="border rounded py-2 px-2 w-full"
-                type="email"
-                name="email"
-                id="email-address"
-                required
-              />
-            </div>
+        <form name="contact" method="GET" action="index.html">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="email-address" />
 
-            <div class="mb-8">
-              <label class="block text-gray-700 font-bold mb-2" for="message"
-                >Your message, questions, complaints or comments:</label
-              >
-              <textarea
-                class="border w-full h-56 p-2"
-                id="message"
-                name="message"
-                placeholder="Enter your message..."
-                required
-              ></textarea>
-            </div>
-            <div class="mb-8">
-              <button
-                type="submit"
-                id="submit-button"
-                class="primary-button w-full"
-              >
-                Send
-              </button>
-            </div>
-          </form>
-          <h3 class="text-center text-xl text-green-800" id="status"></h3>
-        </div>
-        <!-- end of form container -->
+          <label for="user-message">Your Message</label>
+          <textarea name="user-message" rows="5"></textarea>
+          <button class="btn" type="submit">SEND</button>
+        </form>
       </section>
     </main>
-
-    <footer class="main-footer w-full border-t-2 mt-8 h-72 p-8">
-      <img
-        class="block mx-auto rounded-full h-28 w-28"
-        src="images/cat_small.png"
-        alt="Sarge the angry cat"
-      />
-      <span class="block font-bold text-gray-700 text-center mt-8"
-        >Goodbye and thanks for viewing my portfolio.</span
-      >
-      <a class="block text-center mt-8 text-blue-600" href="#top"
-        >Back to the top.</a
-      >
-    </footer>
   </body>
 </html>
