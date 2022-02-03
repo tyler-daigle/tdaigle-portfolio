@@ -199,6 +199,10 @@ textarea {
   padding: 0.25rem;
 }
 
+.send-button {
+  margin-top: var(--spacing-size);
+}
+
 @media (min-width: 800px) {
   .intro-container section {
     width: 800px;
